@@ -1,0 +1,758 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.banner {
+  background-image: url(img/banner.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.banner .overlay .name {
+  width: 50%;
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.banner .overlay .name h1 {
+  font-family: "semi-bold";
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.banner .overlay .name p {
+  font-family: "regular";
+  font-size: 16px;
+  line-height: 34px;
+}
+
+.banner .overlay .name p a {
+  color: white;
+}
+
+.banner .overlay .name .button {
+  width: 104%;
+  margin-top: 40px;
+}
+
+.banner .overlay .name .button i {
+  color: white;
+}
+
+.banner .overlay .name .button .first {
+  margin-left: 5px;
+}
+
+.banner .overlay .name .button a {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 16px;
+  font-family: "regular";
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.banner .overlay .name .button:hover .first {
+  margin-left: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.about {
+  color: white;
+  margin-top: 80px;
+}
+
+.about h2 {
+  font-size: 30px;
+  font-family: "semi-bold";
+  margin-bottom: 50px;
+}
+
+.about .info p {
+  font-size: 16px;
+  font-family: "regular";
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.about .info .vids {
+  position: relative;
+}
+
+.about .info .vids .black {
+  background: black;
+  height: 12px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.about .info .vids .back {
+  background: black;
+  height: 30px;
+  width: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.services {
+  color: white;
+  margin-top: 80px;
+}
+
+.services h2 {
+  font-size: 30px;
+  font-family: "semi-bold";
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 16px;
+  font-family: "regular";
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.services .skills {
+  margin-top: 50px;
+}
+
+.services .skills .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.services .skills .slick-dots .slick-active button {
+  background-color: #464444;
+  color: #464444;
+  outline: 0px;
+}
+
+.services .skills .slick-dots button {
+  background-color: #292828;
+  color: #292828;
+  margin-right: 10px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.services .skills .list {
+  background-color: #1a1818;
+  margin: 20px 0px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.services .skills .list img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+.services .skills .list h3 {
+  font-size: 20px;
+  font-family: "semi-bold";
+  margin-bottom: 20px;
+}
+
+.services .skills .list p {
+  font-size: 16px;
+  font-family: "regular";
+  margin-bottom: 10px;
+}
+
+.services .skills .list i {
+  color: white;
+}
+
+.services .skills .list .sec {
+  margin-right: 10px;
+}
+
+.portfolio {
+  margin-top: 100px;
+}
+
+.portfolio h2 {
+  color: white;
+  font-family: "semi-bold";
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.portfolio .project {
+  height: 60vh;
+  position: relative;
+  margin-top: 25px;
+}
+
+.portfolio .project img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio .project .overlay {
+  background-color: #1a1818;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  padding: 25px 25px;
+  opacity: 0;
+}
+
+.portfolio .project .overlay h3 {
+  font-size: 25px;
+  font-family: "semi-bold";
+  margin-bottom: 20px;
+}
+
+.portfolio .project .overlay h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.portfolio .project .overlay p {
+  font-size: 16px;
+  font-family: "regular";
+  color: white;
+  line-height: 28px;
+}
+
+.portfolio .project .overlay .visit {
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  font-family: "regular";
+  font-size: 17px;
+}
+
+.portfolio .project .overlay:hover {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.say {
+  background-color: #1a1818;
+  margin-top: 80px;
+}
+
+.say .innersay {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.say .innersay h2 {
+  font-family: "semi-bold";
+  font-size: 40px;
+  margin-bottom: 25px;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.say .innersay p {
+  font-size: 16px;
+  font-family: "regular";
+  color: white;
+  line-height: 28px;
+  width: 100%;
+}
+
+.say .innersay .button {
+  margin-top: 50px;
+}
+
+.say .innersay .button .first {
+  margin-left: 5px;
+}
+
+.say .innersay .button a {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 16px;
+  font-family: "regular";
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+.contact {
+  margin-top: 80px;
+}
+
+.contact h2 {
+  color: white;
+  font-family: "semi-bold";
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.contact .icons {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .icons .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .icons .icon .icon-size {
+  height: 70px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1a1818;
+}
+
+.contact .icons .icon .icon-size .first {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.contact .icons .icon p {
+  font-size: 16px;
+  font-family: "regular";
+  color: white;
+  line-height: 25px;
+  margin-left: 20px;
+}
+
+.contact .icons .icon p a {
+  font-size: 17px;
+  font-family: "regular";
+  color: white;
+  text-decoration: none;
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #1a1818;
+  background-color: #1a1818;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: "regular";
+}
+
+.contact form button {
+  padding: 15px;
+  font-size: 16px;
+  font-family: "regular";
+  color: white;
+  background-color: #1a1818;
+  outline: 0;
+  width: 20%;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  background-color: #1a1818;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer p {
+  font-size: 16px;
+  font-family: "regular";
+  color: white;
+  line-height: 25px;
+  margin-left: 20px;
+}
+
+footer a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+footer .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .media p {
+  margin-right: 20px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .banner {
+    height: 50vh;
+  }
+  .portfolio {
+    margin-top: 100px;
+  }
+  .portfolio h2 {
+    color: white;
+    font-family: "semi-bold";
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+  .portfolio .project {
+    height: 30vh;
+    position: relative;
+    margin-top: 25px;
+  }
+  .portfolio .project img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .portfolio .project .overlay {
+    background-color: #1a1818;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    padding: 25px 25px;
+    opacity: 0;
+  }
+  .portfolio .project .overlay h3 {
+    font-size: 25px;
+    font-family: "semi-bold";
+    margin-bottom: 20px;
+  }
+  .portfolio .project .overlay h3 a {
+    color: white;
+    text-decoration: none;
+  }
+  .portfolio .project .overlay p {
+    font-size: 17px;
+    font-family: "regular";
+    color: white;
+    line-height: 28px;
+  }
+  .portfolio .project .overlay .visit {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    color: white;
+    font-family: "regular";
+    font-size: 17px;
+  }
+  .portfolio .project .overlay:hover {
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .say .innersay {
+    height: 50vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner .overlay {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: linear-gradient(top, red, green);
+  }
+  .banner .overlay .name {
+    text-align: left;
+  }
+  .services {
+    color: white;
+    margin-top: 80px;
+  }
+  .services h2 {
+    font-size: 30px;
+    font-family: "semi-bold";
+    margin-bottom: 10px;
+  }
+  .services p {
+    font-size: 16px;
+    font-family: "regular";
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .services .skills {
+    margin-top: 50px;
+  }
+  .services .skills .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+  .services .skills .slick-dots .slick-active button {
+    background-color: #464444;
+    outline: 0px;
+  }
+  .services .skills .slick-dots button {
+    background-color: #292828;
+    color: #292828;
+    margin-right: 10px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+  }
+  .services .skills .list {
+    background-color: #1a1818;
+    margin: 0 10px;
+    width: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+  }
+  .services .skills .list img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+  }
+  .services .skills .list h3 {
+    font-size: 20px;
+    font-family: "semi-bold";
+    margin-bottom: 20px;
+  }
+  .services .skills .list p {
+    font-size: 16px;
+    font-family: "regular";
+    margin-bottom: 10px;
+  }
+  .services .skills .list i {
+    color: white;
+    font-size: 12px;
+  }
+  .services .skills .list .sec {
+    margin-right: 10px;
+  }
+  .portfolio .project {
+    height: 60vh;
+  }
+  .say {
+    margin-top: 80px;
+  }
+  .say .innersay {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80vh;
+    text-align: center;
+  }
+  .say .innersay h2 {
+    width: 60%;
+    line-height: 1.2;
+  }
+  .say .innersay p {
+    line-height: 28px;
+    width: 60%;
+  }
+  .say .innersay .button {
+    margin-top: 50px;
+  }
+  .say .innersay .button .first {
+    margin-left: 5px;
+  }
+  .say .innersay .button a {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 16px;
+    font-family: "regular";
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 7px;
+  }
+  .say .innersay .button:hover {
+    margin-top: 50px;
+  }
+  .say .innersay .button:hover .first {
+    margin-left: 5px;
+  }
+  .say .innersay .button:hover a {
+    background-color: white;
+    color: #1a1818;
+    -webkit-transition: 1s;
+    transition: 1s;
+    border: 1px solid white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width */
+/*# sourceMappingURL=style.css.map */
