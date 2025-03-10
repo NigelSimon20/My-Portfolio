@@ -1,31 +1,21 @@
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 5%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: absolute;
   width: 100%;
 }
-
 .header .logo {
   width: 45%;
   z-index: 999;
 }
-
 .header .logo img {
   width: 100%;
 }
-
 .header .button {
   display: none;
 }
-
 .header .menu {
   background-color: black;
   position: absolute;
@@ -33,55 +23,33 @@
   width: 100%;
   left: -100vw;
   opacity: 0;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  transition: 0.4s ease;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 998;
 }
-
 .header .menu .menu-item {
   padding: 15px 20px;
   list-style: none;
 }
-
 .header .menu .menu-item a {
   color: white;
   font-family: "regular";
 }
-
 .header .menu .menu-item .bold {
   font-family: "bold";
   font-weight: 800;
 }
-
 .header .hamburger {
   height: 30px;
   width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .header .hamburger .bar {
   height: 5px;
   width: 100%;
@@ -89,46 +57,31 @@
   border-radius: 5px;
   z-index: 999;
 }
-
 .header .hamburger #top {
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
+  transform: translateY(-4px);
+  transition: all 0.6s ease;
 }
-
 .header .hamburger #middle {
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
-
 .header .hamburger #bottom {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
+  transform: translateY(4px);
+  transition: all 0.6s ease;
 }
-
 .header .open {
   opacity: 1;
   left: 0;
 }
-
 .header .open #top {
-  -webkit-transform: translateY(5px) rotate(135deg);
-          transform: translateY(5px) rotate(135deg);
+  transform: translateY(5px) rotate(135deg);
   background-color: white;
 }
-
 .header .open #middle {
   opacity: 0;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
-
 .header .open #bottom {
-  -webkit-transform: translateY(-5px) rotate(-135deg);
-          transform: translateY(-5px) rotate(-135deg);
+  transform: translateY(-5px) rotate(-135deg);
   background-color: white;
 }
 
@@ -138,7 +91,6 @@
     top: 0;
   }
 }
-
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   .header .logo {
@@ -151,14 +103,11 @@
     top: 0;
   }
 }
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .header {
     padding: 30px 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-top: 0;
   }
   .header .logo {
@@ -193,7 +142,6 @@
   }
   .header .button:hover .first {
     margin-left: 5px;
-    -webkit-transition: 1s;
     transition: 1s;
   }
   .header .menu {
@@ -203,21 +151,12 @@
     width: 100%;
     left: 30px;
     opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     border-radius: 6px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    align-items: center;
+    flex-direction: row;
     width: 60%;
   }
   .header .menu .menu-item {
@@ -234,5 +173,4 @@
   .header .hamburger {
     display: none;
   }
-}
-/*# sourceMappingURL=navigation.css.map */
+}/*# sourceMappingURL=navigation.css.map */
